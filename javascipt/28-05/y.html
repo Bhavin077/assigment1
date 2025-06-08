@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <input type="text" id="n1" placeholder="Enter Your name">
+      <button onclick="h()">submit</button>
+    <h1 id="h1"></h1>
+    
+    <script>
+        
+        function h()
+        {
+         let tag1 = document.getElementById("n1").Value;
+         console.log(tag1);
+         document.getElementById("h1").innerText=`${tag1} wllcome to our website`;
+        }
+    </script>
+</body>
+</html>

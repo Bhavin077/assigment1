@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">change css through js</h1>
+    <button onclick="change_css()">Change css</button>
+    <BUtton onclick="orignal_css()">orignal css</BUtton>
+
+    <script>
+        let h1_tag = document.getElementById("h1")
+        
+        function change_css()
+        {
+            h1_tag.style.color="red";
+            h1_tag.style.backgroundColor="black";
+            h1_tag.style.fontFamily="sans-serif";
+
+        }
+
+        function orignal_css()
+        {
+            h1_tag.style.color="black";
+            h1_tag.style.backgroundColor="white";
+            h1_tag.style.fontFamily="Arial";
+        }
+    </script>
+</body>
+</html>

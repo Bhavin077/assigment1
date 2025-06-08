@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="n">this oergraph</p>
+    <button onclick=" change_css()">change</button>
+    <script>
+        // alert("Welcome!!")
+        // confirm("yes or no")
+
+        let n_tag=document.getElementById("n") 
+
+        function change_css()
+        {
+            let answer= prompt("4+4 = ?")
+            n_tag.style.backgroundColor="red"
+            
+            if (answer == "8") 
+            {
+            alert("Correct!");
+            }
+            else
+            {
+                alert("Try again.");
+            }
+            
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="tel" placeholder="Enter your number" id="n1">
+    <button onclick="number_vlidation()" >submit</button>
+    <h1 id="h1"></h1>
+
+    <script>
+        
+
+        console.log(number.length)
+        function number_vlidation()
+        {
+            let number=document.getElementById("n1").value
+            if(number.length<10)
+            {
+                document.getElementById("h1").innerText = "Too short";
+                
+            }
+            else if(number.length>10)
+            {
+                 document.getElementById("h1").innerText = "Too ";
+                
+            }
+            else{
+                 document.getElementById("h1").innerText = "Too rt";
+            }
+        }
+    </script>
+</body>
+</html>
